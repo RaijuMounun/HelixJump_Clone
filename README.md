@@ -1,4 +1,4 @@
-# HelixJump_Clone
+# HelixJump Clone
 Clone of a game called Helix Jump
 
 I tried to make a basic ProcGen system in this game.
