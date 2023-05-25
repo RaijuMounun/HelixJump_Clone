@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8437711539876215586}
   - component: {fileID: 5979710175955242984}
   - component: {fileID: 5868439961311871034}
+  - component: {fileID: -3902652862934989689}
   m_Layer: 0
   m_Name: SafeTile
   m_TagString: Untagged
@@ -95,6 +96,18 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7612828271358214642, guid: 2d9073e82a38b3e48a5d647c89f0a606, type: 3}
+--- !u!114 &-3902652862934989689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5331363421973016125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6820bc1010c91b64196261039e073c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

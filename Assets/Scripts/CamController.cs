@@ -6,7 +6,7 @@ public class CamController : MonoBehaviour
 {
     public Transform ball;
     Vector3 offset;
-    public float smoothSpeed = 0.5f;
+    [Range(0, 1)] public float smoothSpeed = 0.5f;
 
     void Awake()
     {
