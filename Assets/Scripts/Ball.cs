@@ -6,7 +6,7 @@ public class Ball : MonoBehaviour
 {
     Rigidbody rb;
     [SerializeField] GameObject splashPrefab;
-    [Range(120, 500), SerializeField] float jumpForce = 5f;
+    [Range(120, 500), SerializeField] float jumpForce = 400f;
     GameController gameController;
 
     void Awake()
@@ -17,7 +17,7 @@ public class Ball : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        rb.AddForce(Vector3.up * jumpForce);
+        rb.velocity = new Vector3(rb.velocity.x, jumpForce * Time.deltaTime, rb.velocity.z);
 
         GameObject _splash = Instantiate(splashPrefab, transform.position - new Vector3(0, .21f, -0.2f), Quaternion.identity);
         _splash.transform.parent = other.transform;

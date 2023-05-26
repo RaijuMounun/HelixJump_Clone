@@ -31,7 +31,6 @@ public class RotationController : MonoBehaviour
         {
             return;
         }
-        print(gameController.gameState);
 
         if (Input.GetMouseButton(0))
             cylinder.transform.Rotate(0f, -moveX * rotationSpeed, 0f);
